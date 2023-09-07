@@ -1,0 +1,34 @@
+[
+  {
+    "description": "    Test to E2E validate the ECommerce site",
+    "keyword": "Feature",
+    "name": "connect to db",
+    "line": 1,
+    "id": "connect-to-db",
+    "tags": [],
+    "uri": "dbTest.feature",
+    "elements": [
+      {
+        "id": "connect-to-db;db-test",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "db test",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User is connected to db",
+            "result": {
+              "status": "failed",
+              "duration": 281000000,
+              "error_message": "CypressError: `cy.task('sqlServer:execute')` failed with the following error:\n\n> Failed to connect to (localdb)\\LocalDb:1433 - getaddrinfo ENOTFOUND (localdb)\\LocalDb\n    at https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:160159:78\nFrom previous event:\n    at Context.task (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:160141:15)\nFrom Your Spec Code:\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\support\\e2e.js:17802:8)\n\nFrom Node.js Internals:\n  ConnectionError: Failed to connect to (localdb)\\LocalDb:1433 - getaddrinfo ENOTFOUND (localdb)\\LocalDb\n      at ConnectionError (C:\\CypressAutomation\\node_modules\\tedious\\lib\\errors.js:13:12)\n      at Connection.socketError (C:\\CypressAutomation\\node_modules\\tedious\\lib\\connection.js:1008:28)\n      at C:\\CypressAutomation\\node_modules\\tedious\\lib\\connection.js:874:21\n      at GetAddrInfoReqWrap.callback (C:\\CypressAutomation\\node_modules\\tedious\\lib\\connector.js:48:16)\n      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (dns.js:77:17)\n  "
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

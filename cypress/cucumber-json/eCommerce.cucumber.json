@@ -1,0 +1,185 @@
+[
+  {
+    "description": "    Test to E2E validate the ECommerce site",
+    "keyword": "Feature",
+    "name": "E2E validate ECommerce site",
+    "line": 1,
+    "id": "e2e-validate-ecommerce-site",
+    "tags": [],
+    "uri": "eCommerce.feature",
+    "elements": [
+      {
+        "id": "e2e-validate-ecommerce-site;ecommerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Ecommerce products delivery",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User opens Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 1966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User adds items to cart",
+            "result": {
+              "status": "passed",
+              "duration": 1895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate the total price",
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User selects the country and Verify Thankyou message",
+            "result": {
+              "status": "passed",
+              "duration": 5781000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2e-validate-ecommerce-site;filling-form-to-shop",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Filling form to shop",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "User opens Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 949000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User fills form details",
+            "result": {
+              "status": "passed",
+              "duration": 391000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Validate the forms behavior",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User clicks shop button",
+            "result": {
+              "status": "passed",
+              "duration": 368000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2e-validate-ecommerce-site;filling-form-to-shop-cucumber-data-driven",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Filling form to shop-Cucumber Data Driven",
+        "tags": [
+          {
+            "name": "@DataDrivenCucumber",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "User opens Ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 337000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Billy",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User fills form details- CucumberDataDriven",
+            "result": {
+              "status": "passed",
+              "duration": 448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Validate the forms behavior- CucumberDataDriven",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "User clicks shop button",
+            "result": {
+              "status": "passed",
+              "duration": 349000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

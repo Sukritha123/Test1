@@ -1,0 +1,95 @@
+[
+  {
+    "description": "    API level testing",
+    "keyword": "Feature",
+    "name": "Library API site",
+    "line": 1,
+    "id": "library-api-site",
+    "tags": [],
+    "uri": "apiTest.feature",
+    "elements": [
+      {
+        "id": "library-api-site;single-book-displayed",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Single book displayed",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User visits website",
+            "result": {
+              "status": "passed",
+              "duration": 1996000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks on Library button",
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Details of 1 book is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "library-api-site;security-testing",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Security testing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User visits website",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User accesses library page as a different user",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "404 error is displayed",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
